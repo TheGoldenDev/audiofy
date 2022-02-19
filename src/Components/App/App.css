@@ -1,0 +1,132 @@
+body,
+html,
+#root {
+  height: 100%;
+}
+
+html {
+  font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+h1 {
+  padding: 0.75rem 0;
+  background-color: #010c3f;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+}
+
+h1 .highlight {
+  color: #6c41ec;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.35rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.85rem;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  padding: 0 17% 10% 17%;
+  row-gap: 1rem;
+}
+
+@media only screen and (max-width: 440px) {
+  .App {
+    padding: 0 10% 6% 10%;
+  }
+}
+
+.root-div {
+  height: 100%;
+}
+
+html { 
+  background: url('./background_photo_desktop.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1020px) {
+  .container {
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    row-gap: 3rem;
+  }
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-basis: 48%;
+  min-width: 40%;
+}
+
+@media only screen and (max-width: 1020px) {
+  .col {
+    flex-direction: row;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+.App .col .heading {
+ flex-basis: 6.2rem;
+}
+
+@media only screen and (max-width: 1020px) {
+  .App .col .heading {
+    flex-basis: 100%;
+  }
+}
+
+.heading {
+  text-transform: capitalize;
+}
+
+.App-heading {
+  display: block;
+  width: 100%;
+}
+
+.hero-heading {
+  margin-top: 2rem;
+}

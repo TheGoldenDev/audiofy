@@ -1,0 +1,96 @@
+.Playlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  width: 100%;
+  padding: 0.8rem;
+  max-height: 40rem;
+  min-height: 5rem;
+}
+
+@media only screen and (max-width: 1020px) {
+  .Playlist {
+    display: flex;
+  }
+}
+
+.Playlist-container {
+  display: flex;
+  width: 100%;
+  align-self: flex-end;
+  border: 1px solid rgb(240, 46, 170);
+  background-color: rgba(1, 12, 63, 0.7);
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+@media only screen and (max-width: 1020px) {
+  .Playlist-container {
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+.Playlist-start {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0.5rem;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+@media only screen and (max-width: 1020px) {
+  .Playlist-start {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+  }
+}
+
+
+
+.Playlist input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid #6C41EC;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+  color: #fff;
+  text-align: center;
+  width: 65%;
+}
+
+@media only screen and (max-width: 1020px) {
+  .Playlist input {
+    width: 80%;
+  }
+}
+
+.Playlist-save {
+  cursor: pointer;
+  width: 30%;
+  padding: 0.5rem;
+  border-radius: 30px;
+  background-color: #6c41ec;
+  text-align: center;
+  font-size: 0.8rem;
+  transition: background-color 0.25s;
+  margin-left: 0.5rem;
+}
+
+.Playlist-save:hover {
+  background-color: rgba(108, 65, 233, .7);
+}
+
+@media only screen and (max-width: 1020px) {
+  .Playlist-save {
+    width: 80%;
+  }
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+

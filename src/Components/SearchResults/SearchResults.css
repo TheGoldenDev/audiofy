@@ -1,0 +1,43 @@
+.SearchResults {
+  width: 100%;
+  overflow-y: scroll;
+  padding: 0.8rem;
+  background-color: rgba(1, 12, 63, 0.7);
+  max-height: 40rem;
+  min-height: 5rem;
+}
+
+.SearchResults-container {
+  display: flex;
+  width: 100%;
+  align-self: flex-end;
+  border: 1px solid rgb(108, 65, 236);
+  background-color: rgba(1, 12, 63, 0.7);
+  box-shadow: rgba(108, 65, 236, 0.4) -5px 5px, rgba(108, 65, 236, 0.3) -10px 10px, rgba(108, 65, 236, 0.2) -15px 15px, rgba(108, 65, 236, 0.1) -20px 20px, rgba(108, 65, 236, 0.05) -25px 25px;
+  
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+@media only screen and (max-width: 1020px) {
+  .SearchResults {
+    margin-bottom: 2rem;
+  }
+}
+
+
+@media only screen and (max-width: 1020px) {
+  .SearchResults-container {
+    flex-direction: row;
+  }
+}
+
+.SearchResults .heading {
+  padding: 0;
+  padding-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
