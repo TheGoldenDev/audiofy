@@ -5,6 +5,7 @@
   background-color: rgba(1, 12, 63, 0.7);
   max-height: 40rem;
   min-height: 5rem;
+  scrollbar-width: none;
 }
 
 .SearchResults-container {
