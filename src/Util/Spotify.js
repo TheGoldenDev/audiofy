@@ -1,6 +1,6 @@
 let accessToken;
-const clientId = '49a05f9234894be99df3d18e22b5bf30';
-const redirectUri = 'https://audiofy-app-797a94.netlify.app/';
+const clientId = '096afeeb841e4e8591c6f5872434d3c6';
+const redirectUri = 'http://localhost:3000/';
 
 const Spotify = {
   getAccessToken() {
@@ -30,7 +30,10 @@ const Spotify = {
     const regexCheck = /[-[\]{}()*+?.,\\^$|#\s]/g;
     const searchTerm = term.replace(regexCheck, '');
     return fetch(
-      `https://api.spotify.com/v1/search?type=track&q=${searchTerm}`,
+      `https://api.spotify.com/v1/search?type=track&q=${term.replace(
+        regexCheck,
+        ''
+      )}`,
       {
         headers: {
           Authorization: `Bearer ${accessToken}`,

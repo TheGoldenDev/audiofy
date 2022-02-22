@@ -16,8 +16,8 @@ class SearchBar extends React.Component {
 
   handleSearch(event) {
     if (this.state.term !== undefined || null) {
-      this.props.onSearch(this.state.term);
       event.preventDefault();
+      this.props.onSearch(this.state.term);
     }
   }
 
