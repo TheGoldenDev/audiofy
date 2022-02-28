@@ -6,26 +6,27 @@ import { H, Section } from 'react-headings';
 class SearchBar extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      term: '',
+    };
 
     this.handleSearch = this.handleSearch.bind(this);
     this.handleTermChange = this.handleTermChange.bind(this);
     this.handleKeyPress = this.handleKeyPress.bind(this);
   }
 
-  //search(term) {this.props.onSearch(this.props.term);}
-
   handleSearch(event) {
-    if (this.state.term !== undefined || null) {
-      event.preventDefault();
+    event.preventDefault();
+    if (this.state.term !== null) {
       this.props.onSearch(this.state.term);
     }
+    console.log(this.state.term);
   }
 
-  //Searches the term when the user hit Enter
+  //Searches the term when the user presses Enter key
   handleKeyPress(event) {
-    if (event.key === 'Enter') {
+    if ((event.key === 'Enter') & (this.state.term !== null)) {
       this.props.onSearch(this.state.term);
-      console.log(this.state.term);
     }
   }
 
@@ -39,7 +40,6 @@ class SearchBar extends React.Component {
       <Section>
         <div className='SearchBar'>
           <H className='heading'>1. Search for Music</H>
-          <p>(On The First Search You Will Be Asked To Login To Spotify)</p>
           <input
             onKeyPress={this.handleKeyPress}
             onChange={this.handleTermChange}

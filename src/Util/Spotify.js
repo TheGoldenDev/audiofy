@@ -1,6 +1,11 @@
 let accessToken;
 const clientId = '096afeeb841e4e8591c6f5872434d3c6';
-const redirectUri = 'http://localhost:3000/';
+
+//redirect URI for production use
+const redirectUri = 'https://audiofy-app-797a94.netlify.app/';
+
+//Local host redirect URI for development
+//const redirectUri = 'http://localhost:3000/';
 
 const Spotify = {
   getAccessToken() {
@@ -22,13 +27,10 @@ const Spotify = {
     }
   },
 
-  //escapeRegExp(term) {return term.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, 'random');}
-
   //Searches through the Spotify API to return relevant track information.
   search(term) {
     accessToken = Spotify.getAccessToken();
     const regexCheck = /[-[\]{}()*+?.,\\^$|#\s]/g;
-    const searchTerm = term.replace(regexCheck, '');
     return fetch(
       `https://api.spotify.com/v1/search?type=track&q=${term.replace(
         regexCheck,

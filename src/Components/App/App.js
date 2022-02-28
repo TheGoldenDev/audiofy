@@ -13,7 +13,6 @@ class App extends React.Component {
       searchResults: [],
       playlistName: 'New Playlist',
       playlistTracks: [],
-      term: '',
     };
 
     this.addTrack = this.addTrack.bind(this);
@@ -57,10 +56,16 @@ class App extends React.Component {
     });
   }
 
-  //Uses search results from spotify object to update the state of search results list
+  //Searches spotify for the term then updates the search results list
   searchSpotify(term) {
     Spotify.search(term).then((searchResults) => {
       this.setState({ searchResults: searchResults });
+    });
+  }
+
+  componentDidMount() {
+    window.addEventListener('load', () => {
+      Spotify.getAccessToken();
     });
   }
 
@@ -76,6 +81,7 @@ class App extends React.Component {
             <H className='hero-heading'>
               Create Custom Spotify Playlists with AudIOfy
             </H>
+            <p>(You Must Login To Spotify To Use The App)</p>
             <SearchBar onSearch={this.searchSpotify} />
             <div className='container'>
               <div className='col'>

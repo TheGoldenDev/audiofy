@@ -6,10 +6,6 @@ import { H, Section } from 'react-headings';
 class Playlist extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      playlistName: 'New AudIOfy Playlist',
-      playlistTracks: [],
-    };
 
     this.handleNameChange = this.handleNameChange.bind(this);
   }
