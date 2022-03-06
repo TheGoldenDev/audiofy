@@ -1,5 +1,5 @@
 let accessToken;
-const clientId = '096afeeb841e4e8591c6f5872434d3c6';
+const clientId = '49a05f9234894be99df3d18e22b5bf30';
 
 //redirect URI for production use
 const redirectUri = 'https://audiofy-app-797a94.netlify.app/';
