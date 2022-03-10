@@ -96,7 +96,7 @@ AudIOfy app users may:
 
 ### Built With
 
-- [Node.js](https://nodejs.org/en/)
+- [Node.js](https://nodejs.org/)
 - [React.js](https://reactjs.org/)
 - [Spotify API](https://developer.spotify.com/documentation/web-api/)
 
