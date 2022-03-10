@@ -20,7 +20,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/TheGoldenDev/audiofy">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="public/logo.svg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">AudIOfy</h3>
