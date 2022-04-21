@@ -87,9 +87,6 @@ AudIOfy app users may:
     <li>
     Save their custom playlist to their personal Spotify account.
     </li>
-    <li>
-    Users may search for music by artist, song title, or album name.
-    </li>
   </ol>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -152,9 +149,6 @@ AudIOfy app users may:
     </li>
     <li>
     Save their custom playlist to their personal Spotify account.
-    </li>
-    <li>
-    Users may search for music by artist, song title, or album name.
     </li>
   </ol>
 
